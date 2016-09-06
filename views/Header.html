@@ -1,0 +1,87 @@
+<header class="main-header">
+    
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <div class="dropdown" style="margin-left:2%;position:absolute;margin-top:16px;">
+        <div class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#ebebeb;font-size:14px;font-family:montserratlight;color:black;">Select your branch
+          <div class="caretcustom"></div></div>
+        <ul class="dropdown-menu">
+          <li><a href="#" *ngFor="let Branch of branches">{{Branch.name}}</a></li>
+        </ul>
+      </div>
+      <div class="navbar-custom-menu" style="margin-right:5%;height:67px;">
+        <ul class="nav navbar-nav" style="height: 100%;">
+          <!-- Messages: style can be found in dropdown.less-->
+
+          <!-- Notifications: style can be found in dropdown.less -->
+
+          <!-- User Account: style can be found in dropdown.less -->
+          <li id="profile-name"  style="margin-top: 22px; 
+    font-size: 16px;
+    font-family: montserratlight;color:black">David Mark</li>
+          <li class="dropdown user user-menu" style="height: 100%;">
+            <a style='height: 100%;' href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="caretcustom" style="margin-top:18%;color:black"></span>
+            </a>
+            <ul class="dropdown-menu" style="height:300px;">
+              <!-- User image -->
+
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+<style>
+  .caretcustom{
+    background-image: url('./../dist/img/down-arrow.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    display: inline-block;
+    height: 10px;
+    /* width: 0; */
+    /* height: 0; */
+    margin-left: 2px;
+    vertical-align: middle;
+    /* border-top: 4px dashed; */
+    border-top: 4px solid\9;
+  /* border-right: 4px solid transparent; */
+  /* border-left: 4px solid transparent
+}
+</style>
